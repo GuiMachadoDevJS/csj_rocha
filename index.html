@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="CSJ Rocha Transportes — Locação de Caminhões Munck em São Paulo e Região. Içamento e transporte de cargas pesadas com segurança e excelência." />
+  <title>CSJ Rocha | Transportes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre-inner">
+      <div class="pre-logo">CSJ<span>ROCHA</span></div>
+      <div class="pre-bar">
+        <div class="pre-fill"></div>
+      </div>
+      <div class="pre-label">Carregando</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <img src="img/logo.jpeg" alt="CSJ Rocha" height="46" class="nav-logo-img"
+          onerror="this.style.display='none';document.getElementById('nav-logo-txt').style.display='flex';" />
+        <div id="nav-logo-txt" class="nav-logo-txt" style="display:none;">
+          <span class="nl-main">CSJ<em>ROCHA</em></span>
+          <span class="nl-sub">Transportes</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#missao">Missão</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#frota">Frota</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="nav-link nav-cta" href="#contato"><i class="fab fa-whatsapp"></i> Orçamento</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-photo" style="background-image:url('img/hero-bg.jpg')"></div>
+    <div class="hero-gradient"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-diagonal"></div>
+    <div class="hero-line-left"></div>
+    <div class="container hero-container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-xl-7 col-lg-8">
+          <div class="hero-eyebrow" data-aos="fade-down" data-aos-duration="700">
+            <span class="eyebrow-dot"></span>São Paulo & Região<span class="eyebrow-line"></span>Desde 2021
+          </div>
+          <h1 class="hero-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="900">
+            SOLUÇÕES EM<br />
+            <span class="ht-block">IÇAMENTO</span>
+            <span class="ht-block accent">& TRANSPORTE</span>
+          </h1>
+          <p class="hero-text" data-aos="fade-right" data-aos-delay="250" data-aos-duration="800">
+            Locação de Caminhões Munck com operadores qualificados para obras, indústrias e grandes empreendimentos.
+            Segurança, pontualidade e excelência em cada operação.
+          </p>
+          <div class="hero-kpis" data-aos="fade-up" data-aos-delay="350">
+            <div class="kpi"><span class="kpi-n">45<small>t</small></span><span class="kpi-l">Capacidade</span></div>
+            <div class="kpi-divider"></div>
+            <div class="kpi"><span class="kpi-n">5<small>+</small></span><span class="kpi-l">Equipamentos</span></div>
+            <div class="kpi-divider"></div>
+            <div class="kpi"><span class="kpi-n">3<small>+</small></span><span class="kpi-l">Anos</span></div>
+          </div>
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="450">
+            <a href="#contato" class="btn-solid"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+            <a href="#frota" class="btn-ghost">Ver Nossa Frota <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-4 d-none d-lg-flex justify-content-end" data-aos="fade-left" data-aos-delay="300">
+          <div class="hero-float-card">
+            <div class="hfc-header"><i class="fas fa-truck-moving"></i>Frota Disponível</div>
+            <div class="hfc-item"><span class="hfc-dot"></span>
+              <div><strong>Munck Mercedes-Benz · 45 ton</strong><span>Truck 6x2 · Articulado Hidráulico</span></div>
+            </div>
+            <div class="hfc-item"><span class="hfc-dot"></span>
+              <div><strong>Munck VW Constellation · 45 ton</strong><span>ING · 21m lança · Controle Remoto</span></div>
+            </div>
+            <div class="hfc-item"><span class="hfc-dot"></span>
+              <div><strong>Munck 3/4 · 7,5 ton</strong><span>Lança 9m · Guincho de Cabo</span></div>
+            </div>
+            <div class="hfc-item"><span class="hfc-dot"></span>
+              <div><strong>Truck Carroceria 8,5m</strong><span>Transporte de cargas especiais</span></div>
+            </div>
+            <a href="https://wa.me/5511930710050" target="_blank" class="hfc-cta"><i class="fab fa-whatsapp"></i>
+              Verificar Disponibilidade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-track">
+        <div class="scroll-thumb"></div>
+      </div><span>scroll</span>
+    </div>
+  </section>
+
+  <!-- RIBBON -->
+  <div class="ribbon-strip">
+    <div class="container">
+      <div class="ribbon-inner">
+        <div class="ribbon-item"><i class="fas fa-shield-alt"></i><span>Operação Certificada</span></div>
+        <div class="ribbon-sep"></div>
+        <div class="ribbon-item"><i class="fas fa-map-marker-alt"></i><span>São Paulo e Região</span></div>
+        <div class="ribbon-sep"></div>
+        <div class="ribbon-item"><i class="fas fa-clock"></i><span>Locação Imediata</span></div>
+        <div class="ribbon-sep"></div>
+        <div class="ribbon-item"><i class="fab fa-whatsapp"></i><span>(11) 93071-0050</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sec sec-sobre">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="sobre-visual">
+            <div class="sv-main">
+              <img src="img/sobre-operacao.jpg" alt="CSJ Rocha em operação"
+                onerror="this.src='https://placehold.co/580x420/0D1B3E/FFFFFF?text=CSJ+Rocha'" />
+            </div>
+            <div class="sv-badge"><i class="fas fa-award"></i><strong>+3 Anos</strong><span>de Excelência</span></div>
+            <div class="sv-tag"><i class="fas fa-check-circle"></i> NR-35 Aplicada</div>
+            <div class="sv-corner"></div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="120">
+          <div class="sec-eyebrow">Quem Somos</div>
+          <h2 class="sec-title">Referência em <strong>Movimentação</strong> de Cargas Pesadas</h2>
+          <div class="title-rule"></div>
+          <p class="sec-body">Fundada em <strong>2021</strong>, a CSJ Rocha Transportes é especializada na locação de
+            caminhões Munck para içamento, montagem e posicionamento de cargas pesadas em São Paulo e região.</p>
+          <p class="sec-body">Localizada no <strong>Parque Novo Mundo, São Paulo</strong>, atuamos com compromisso,
+            qualidade e agilidade, adaptando nossas soluções às necessidades específicas de cada obra ou empreendimento.
+          </p>
+          <div class="sobre-pills">
+            <div class="pill"><i class="fas fa-industry"></i>Obras Industriais</div>
+            <div class="pill"><i class="fas fa-building"></i>Construção Civil</div>
+            <div class="pill"><i class="fas fa-bolt"></i>Inst. Elétricas</div>
+            <div class="pill"><i class="fas fa-boxes"></i>Logística Pesada</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSÃO -->
+  <section id="missao" class="sec sec-missao">
+    <div class="missao-bg-shape"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-6 text-center" data-aos="fade-up">
+          <div class="sec-eyebrow light">Nossa Essência</div>
+          <h2 class="sec-title light">Missão, Visão <span class="text-acc">&</span> Valores</h2>
+          <div class="title-rule centered"></div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="mv-card">
+            <div class="mv-num">01</div>
+            <div class="mv-icon"><i class="fas fa-crosshairs"></i></div>
+            <h3>Nossa Missão</h3>
+            <p>Garantir atendimento rápido e altamente profissional, prezando pela segurança, qualidade e excelência
+              operacional em cada serviço prestado.</p>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="mv-card highlighted">
+            <div class="mv-num">02</div>
+            <div class="mv-icon"><i class="fas fa-binoculars"></i></div>
+            <h3>Nossa Visão</h3>
+            <p>Ser referência em locação de equipamentos pesados em São Paulo, construindo parcerias sólidas e
+              contribuindo para o sucesso de cada projeto.</p>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="mv-card">
+            <div class="mv-num">03</div>
+            <div class="mv-icon"><i class="fas fa-gem"></i></div>
+            <h3>Nossos Valores</h3>
+            <ul class="mv-list">
+              <li><i class="fas fa-chevron-right"></i> Segurança em primeiro lugar</li>
+              <li><i class="fas fa-chevron-right"></i> Compromisso e pontualidade</li>
+              <li><i class="fas fa-chevron-right"></i> Qualidade operacional</li>
+              <li><i class="fas fa-chevron-right"></i> Parcerias duradouras</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="missao-banner" data-aos="fade-up" data-aos-delay="100">
+        <div class="mb-quote">
+          <i class="fas fa-quote-left"></i>
+          <blockquote>Sua obra merece o melhor — e é exatamente isso que entregamos.</blockquote>
+        </div>
+        <a href="#contato" class="btn-solid-white"><i class="fab fa-whatsapp"></i> Fale com a Equipe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="sec sec-servicos">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="sec-eyebrow">O que fazemos</div>
+          <h2 class="sec-title">Nossas <strong>Soluções</strong> Operacionais</h2>
+          <div class="title-rule"></div>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0" data-aos="fade-left">
+          <p class="sec-body mb-0">Atendemos obras, indústrias, comércios e clientes particulares com soluções completas
+            em içamento e movimentação de cargas pesadas.</p>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="srv-card srv-big">
+            <div class="srv-icon"><i class="fas fa-arrow-up"></i></div>
+            <div class="srv-content">
+              <h4>Içamento de Cargas</h4>
+              <p>Içamento preciso de equipamentos e estruturas pesadas com total controle, segurança operacional e
+                equipe especializada em cada etapa.</p>
+            </div>
+            <div class="srv-num">01</div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="srv-card srv-big">
+            <div class="srv-icon"><i class="fas fa-industry"></i></div>
+            <div class="srv-content">
+              <h4>Montagem Industrial</h4>
+              <p>Montagem e posicionamento de estruturas metálicas, máquinas industriais e equipamentos pesados com
+                precisão milimétrica.</p>
+            </div>
+            <div class="srv-num">02</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="srv-card">
+            <div class="srv-icon"><i class="fas fa-box"></i></div>
+            <h4>Contêineres</h4>
+            <p>Içamento e posicionamento de contêineres e módulos habitacionais.</p>
+            <div class="srv-num">03</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="srv-card">
+            <div class="srv-icon"><i class="fas fa-bolt"></i></div>
+            <h4>Equipamentos Elétricos</h4>
+            <p>Movimentação de geradores, transformadores e equipamentos de alta tensão.</p>
+            <div class="srv-num">04</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="srv-card">
+            <div class="srv-icon"><i class="fas fa-hard-hat"></i></div>
+            <h4>Trabalhos em Altura</h4>
+            <p>Cesto aéreo para manutenção e instalações elétricas conforme NR-35.</p>
+            <div class="srv-num">05</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="srv-card">
+            <div class="srv-icon"><i class="fas fa-map-pin"></i></div>
+            <h4>Posicionamento</h4>
+            <p>Colocação de postes, luminárias e descarga em locais de difícil acesso.</p>
+            <div class="srv-num">06</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="srv-card">
+            <div class="srv-icon"><i class="fas fa-cog"></i></div>
+            <h4>Guincho de Cabo</h4>
+            <p>Guincho de cabo para elevação precisa de materiais com maior alcance operacional.</p>
+            <div class="srv-num">07</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="srv-card">
+            <div class="srv-icon"><i class="fas fa-truck"></i></div>
+            <h4>Transporte Especial</h4>
+            <p>Transporte de cargas convencionais e especiais com segurança total.</p>
+            <div class="srv-num">08</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FROTA -->
+  <section id="frota" class="sec sec-frota">
+    <div class="frota-bg-img" style="background-image:url('img/gal-01.jpg')"></div>
+    <div class="frota-overlay"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-7 text-center" data-aos="fade-up">
+          <div class="sec-eyebrow light">Equipamentos</div>
+          <h2 class="sec-title light">Nossa <strong class="text-acc">Frota</strong></h2>
+          <div class="title-rule centered"></div>
+          <p class="sec-body light">Frota completa disponível para locação imediata em São Paulo e Região.</p>
+        </div>
+      </div>
+
+      <!-- 2 muncks principais -->
+      <div class="row g-4 mb-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="truck-card">
+            <div class="tc-status"><span></span> Disponível para Locação</div>
+            <div class="tc-badge">MUNCK PESADO</div>
+            <div class="tc-photo">
+              <img src="img/munck-mercedes.jpg" alt="Munck Mercedes-Benz 45 ton"
+                onerror="this.src='https://placehold.co/620x360/0D1B3E/FFFFFF?text=Munck+45+ton'" />
+              <div class="tc-photo-overlay"></div>
+            </div>
+            <div class="tc-body">
+              <div class="tc-header">
+                <div>
+                  <h3>Caminhão Munck</h3><span class="tc-model">Mercedes-Benz · 45 Toneladas</span>
+                </div>
+                <div class="tc-cap"><span>45</span><small>toneladas</small></div>
+              </div>
+              <p class="tc-desc">Guindaste articulado hidráulico de alta capacidade para içamento e posicionamento de
+                cargas pesadas em obras de grande porte.</p>
+              <div class="tc-specs">
+                <div class="tcs-item"><span class="tcs-l">Marca</span><span class="tcs-v">Mercedes-Benz</span></div>
+                <div class="tcs-item"><span class="tcs-l">Capacidade</span><span class="tcs-v">45 Toneladas</span></div>
+                <div class="tcs-item"><span class="tcs-l">Configuração</span><span class="tcs-v">Truck 6x2</span></div>
+                <div class="tcs-item"><span class="tcs-l">Tipo</span><span class="tcs-v">Articulado Hidráulico</span>
+                </div>
+              </div>
+              <div class="tc-tags"><span>Içamento Pesado</span><span>Estruturas</span><span>Grandes Obras</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="truck-card premium">
+            <div class="tc-status"><span></span> Disponível para Locação</div>
+            <div class="tc-badge premium-b">MUNCK PREMIUM · CESTO AÉREO</div>
+            <div class="tc-photo">
+              <img src="img/munck-vw.jpg" alt="Munck VW Constellation 45 ton ING"
+                onerror="this.src='https://placehold.co/620x360/0A3060/FFFFFF?text=Munck+VW+Constellation'" />
+              <div class="tc-photo-overlay"></div>
+            </div>
+            <div class="tc-body">
+              <div class="tc-header">
+                <div>
+                  <h3>Munck VW Constellation</h3><span class="tc-model">ING · 45 ton · 21m de lança</span>
+                </div>
+                <div class="tc-cap"><span>45</span><small>toneladas</small></div>
+              </div>
+              <p class="tc-desc">Guindaste ING com 21 metros de lança, controle remoto e cesto aéreo. Ideal para
+                trabalhos em altura e operações de grande alcance.</p>
+              <div class="tc-specs">
+                <div class="tcs-item"><span class="tcs-l">Caminhão</span><span class="tcs-v">VW Constellation
+                    24-250</span></div>
+                <div class="tcs-item"><span class="tcs-l">Guindaste</span><span class="tcs-v">ING</span></div>
+                <div class="tcs-item"><span class="tcs-l">Lança</span><span class="tcs-v">21 metros</span></div>
+                <div class="tcs-item"><span class="tcs-l">Tipo</span><span class="tcs-v">Articulado Hidráulico</span>
+                </div>
+              </div>
+              <div class="tc-tags premium-tags"><span>21m Lança</span><span>Controle Remoto</span><span>Cesto
+                  Aéreo</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 equipamentos menores -->
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="truck-card">
+            <div class="tc-status"><span></span> Disponível para Locação</div>
+            <div class="tc-badge">MUNCK + GUINCHO</div>
+            <div class="tc-photo tc-photo-sm">
+              <img src="img/munck-guincho.jpg" alt="Munck com Guincho de Cabo"
+                onerror="this.src='https://placehold.co/620x280/0D1B3E/FFFFFF?text=Munck+Guincho'" />
+              <div class="tc-photo-overlay"></div>
+            </div>
+            <div class="tc-body">
+              <div class="tc-header">
+                <div>
+                  <h3>Munck c/ Guincho</h3><span class="tc-model">Maior alcance operacional</span>
+                </div>
+              </div>
+              <p class="tc-desc">Caminhão Munck com guincho de cabo para içamento com maior precisão e alcance em locais
+                de difícil acesso.</p>
+              <div class="tc-tags"><span>Guincho de Cabo</span><span>Maior Alcance</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="truck-card">
+            <div class="tc-status"><span></span> Disponível para Locação</div>
+            <div class="tc-badge">MUNCK 3/4</div>
+            <div class="tc-photo tc-photo-sm">
+              <img src="img/munck-34.jpg" alt="Caminhão 3/4 Munck 7,5 ton lança 9m"
+                onerror="this.src='https://placehold.co/620x280/0D1B3E/FFFFFF?text=Munck+3/4'" />
+              <div class="tc-photo-overlay"></div>
+            </div>
+            <div class="tc-body">
+              <div class="tc-header">
+                <div>
+                  <h3>Caminhão 3/4 · Munck</h3><span class="tc-model">7,5 ton · Lança 9m</span>
+                </div>
+                <div class="tc-cap"><span>7,5</span><small>toneladas</small></div>
+              </div>
+              <p class="tc-desc">Ideal para espaços reduzidos e obras menores, com lança de 9 metros para içamento
+                preciso.</p>
+              <div class="tc-tags"><span>7,5 ton</span><span>Lança 9m</span><span>Acessos Restritos</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="truck-card">
+            <div class="tc-status"><span></span> Disponível para Locação</div>
+            <div class="tc-badge">TRUCK CARROCERIA</div>
+            <div class="tc-photo tc-photo-sm">
+              <img src="img/truck-carroceria.jpg" alt="Caminhão Truck Carroceria 8,5m"
+                onerror="this.src='https://placehold.co/620x280/0D1B3E/FFFFFF?text=Truck+Carroceria'" />
+              <div class="tc-photo-overlay"></div>
+            </div>
+            <div class="tc-body">
+              <div class="tc-header">
+                <div>
+                  <h3>Truck Carroceria</h3><span class="tc-model">8,5 metros</span>
+                </div>
+              </div>
+              <p class="tc-desc">Caminhão truck com carroceria de 8,5 metros para transporte de cargas convencionais e
+                especiais.</p>
+              <div class="tc-tags"><span>Carroceria 8,5m</span><span>Transporte</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabela resumo -->
+      <div class="frota-table-wrap" data-aos="fade-up">
+        <div class="ftw-header"><i class="fas fa-clipboard-list"></i> Resumo da Frota</div>
+        <div class="table-responsive">
+          <table class="frota-table">
+            <thead>
+              <tr>
+                <th>Equipamento</th>
+                <th>Capacidade</th>
+                <th>Lança / Detalhe</th>
+                <th>Diferenciais</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Munck Mercedes-Benz</strong></td>
+                <td><strong class="text-acc">45 Ton</strong></td>
+                <td>Articulado Hidráulico</td>
+                <td>Truck 6x2 · Alta Capacidade</td>
+                <td><span class="tbl-status">● Disponível</span></td>
+              </tr>
+              <tr>
+                <td><strong>Munck VW Constellation 24-250</strong></td>
+                <td><strong class="text-acc">45 Ton</strong></td>
+                <td>21 metros</td>
+                <td>ING · Controle Remoto · Cesto Aéreo</td>
+                <td><span class="tbl-status">● Disponível</span></td>
+              </tr>
+              <tr>
+                <td><strong>Munck c/ Guincho de Cabo</strong></td>
+                <td>—</td>
+                <td>Alcance Estendido</td>
+                <td>Guincho de Cabo · Precisão Máxima</td>
+                <td><span class="tbl-status">● Disponível</span></td>
+              </tr>
+              <tr>
+                <td><strong>Caminhão 3/4 · Munck</strong></td>
+                <td><strong class="text-acc">7,5 Ton</strong></td>
+                <td>9 metros</td>
+                <td>Compacto · Acessos Restritos</td>
+                <td><span class="tbl-status">● Disponível</span></td>
+              </tr>
+              <tr>
+                <td><strong>Truck Carroceria</strong></td>
+                <td>—</td>
+                <td>8,5 metros</td>
+                <td>Transporte de Cargas Especiais</td>
+                <td><span class="tbl-status">● Disponível</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="ftw-footer">
+          <span><i class="fas fa-truck"></i> 5 Equipamentos</span>
+          <span><i class="fas fa-layer-group"></i> Múltiplas Categorias</span>
+          <span><i class="fas fa-map-marker-alt"></i> SP e Região</span>
+          <span><i class="fas fa-circle text-acc"></i> Todos disponíveis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="sec sec-galeria">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="sec-eyebrow">Nossos Trabalhos</div>
+          <h2 class="sec-title">Galeria de <strong>Operações</strong></h2>
+          <div class="title-rule"></div>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0" data-aos="fade-left">
+          <p class="sec-body mb-0">Conheça alguns dos projetos e operações realizados pela nossa equipe em São Paulo e
+            Região.</p>
+        </div>
+      </div>
+
+      <div class="galeria-grid" data-aos="fade-up">
+        <div class="gal-item gal-big" data-src="img/gal-06.jpg"
+          data-caption="Munck VW Constellation com cesto aéreo em trabalho em viaduto — SP">
+          <img src="img/gal-06.jpg" alt="Munck com cesto aéreo" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item" data-src="img/gal-07.jpg"
+          data-caption="Trabalho em altura com cesto aéreo — equipe CSJ Rocha em ação">
+          <img src="img/gal-07.jpg" alt="Trabalho em altura" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item" data-src="img/gal-08.jpg"
+          data-caption="Içamento com lança estendida ao pôr do sol — operação noturna">
+          <img src="img/gal-08.jpg" alt="Operação noturna" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item" data-src="img/gal-09.jpg"
+          data-caption="Trabalho sob viaduto em obra de infraestrutura rodoviária">
+          <img src="img/gal-09.jpg" alt="Obra rodoviária" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item" data-src="img/gal-10.jpg"
+          data-caption="Içamento de módulos com Munck VW Constellation — cesto aéreo">
+          <img src="img/gal-10.jpg" alt="Içamento de módulos" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item gal-big" data-src="img/gal-01.jpg"
+          data-caption="Içamento em obra de construção civil — Munck CSJ Rocha com guincho de cabo">
+          <img src="img/gal-01.jpg" alt="Içamento construção civil" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item" data-src="img/gal-02.jpg"
+          data-caption="Içamento de equipamento industrial — operação controlada em campo aberto">
+          <img src="img/gal-02.jpg" alt="Içamento industrial" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item" data-src="img/gal-03.jpg"
+          data-caption="Cesto aéreo posicionado em estrutura elevada — equipe com EPIs">
+          <img src="img/gal-03.jpg" alt="Cesto aéreo" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item" data-src="img/gal-04.jpg"
+          data-caption="Içamento de tubulações e peças industriais pesadas">
+          <img src="img/gal-04.jpg" alt="Içamento industrial" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item" data-src="img/gal-05.jpg"
+          data-caption="Munck CSJ Rocha durante içamento com controle total da operação">
+          <img src="img/gal-05.jpg" alt="Munck em operação" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="gal-item" data-src="img/gal-11.jpg"
+          data-caption="Içamento de estrutura metálica — montagem com precisão milimétrica">
+          <img src="img/gal-11.jpg" alt="Montagem de estrutura" loading="lazy" />
+          <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <p class="sec-body">Quer ver seu projeto aqui? Entre em contato e solicite seu orçamento.</p>
+        <a href="#contato" class="btn-solid"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <div class="lb-overlay"></div>
+    <div class="lb-content">
+      <button class="lb-close" aria-label="Fechar"><i class="fas fa-times"></i></button>
+      <button class="lb-prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+      <button class="lb-next" aria-label="Próxima"><i class="fas fa-chevron-right"></i></button>
+      <div class="lb-img-wrap">
+        <img id="lb-img" src="" alt="" />
+        <div class="lb-loader"><i class="fas fa-circle-notch fa-spin"></i></div>
+      </div>
+      <div class="lb-caption" id="lb-caption"></div>
+      <div class="lb-counter" id="lb-counter"></div>
+    </div>
+  </div>
+
+  <!-- DIFERENCIAIS -->
+  <section id="diferenciais" class="sec sec-dif">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="sec-eyebrow">Por que nos escolher</div>
+          <h2 class="sec-title">Por que a <strong>CSJ Rocha?</strong></h2>
+          <div class="title-rule"></div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <p class="sec-body mb-0">Cada detalhe da nossa operação é pensado para garantir a melhor experiência ao
+            cliente, desde o primeiro contato até a conclusão do serviço.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="dif-card">
+            <div class="dif-num">01</div>
+            <div class="dif-icon"><i class="fas fa-shield-alt"></i></div>
+            <h4>Segurança Total</h4>
+            <p>Operações com todas as normas regulamentadoras aplicadas. NR-35, NR-11 e NR-12 em cada serviço.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="dif-card">
+            <div class="dif-num">02</div>
+            <div class="dif-icon"><i class="fas fa-stopwatch"></i></div>
+            <h4>Pontualidade</h4>
+            <p>Comprometimento absoluto com prazos e horários acordados. Sua obra não para por equipamento.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="dif-card">
+            <div class="dif-num">03</div>
+            <div class="dif-icon"><i class="fas fa-user-cog"></i></div>
+            <h4>Equipe Técnica</h4>
+            <p>Operadores certificados e experientes, garantindo excelência técnica em cada operação de içamento.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="dif-card">
+            <div class="dif-num">04</div>
+            <div class="dif-icon"><i class="fas fa-handshake"></i></div>
+            <h4>Atendimento Sob Medida</h4>
+            <p>Soluções personalizadas para cada cliente e tipo de obra, do pequeno projeto à grande indústria.</p>
+          </div>
+        </div>
+      </div>
+      <div class="dif-cta" data-aos="fade-up">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <h3>Pronto para iniciar seu projeto?</h3>
+            <p>Equipamentos disponíveis para locação imediata. Solicite seu orçamento agora mesmo.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end"><a href="#contato" class="btn-solid"><i class="fab fa-whatsapp"></i>
+              Solicitar Orçamento</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="sec sec-contato">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-6 text-center" data-aos="fade-up">
+          <div class="sec-eyebrow">Vamos Conversar</div>
+          <h2 class="sec-title">Fale <strong>Conosco</strong></h2>
+          <div class="title-rule centered"></div>
+          <p class="sec-body">Solicite seu orçamento ou tire suas dúvidas. Respondemos com rapidez!</p>
+        </div>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-info-box">
+            <div class="cib-header"><i class="fas fa-building"></i> CSJ Rocha Transportes</div>
+            <div class="cib-items">
+              <div class="cib-item">
+                <div class="cib-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="cib-text"><span>WhatsApp / Telefone</span><a href="https://wa.me/5511930710050"
+                    target="_blank">(11) 93071-0050</a></div>
+              </div>
+              <div class="cib-item">
+                <div class="cib-icon"><i class="fas fa-envelope"></i></div>
+                <div class="cib-text"><span>E-mail</span><a
+                    href="mailto:custodiosilverio@hotmail.com">custodiosilverio@hotmail.com</a></div>
+              </div>
+              <div class="cib-item">
+                <div class="cib-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="cib-text"><span>Localização</span><strong>Parque Novo Mundo, São Paulo — SP</strong></div>
+              </div>
+              <div class="cib-item">
+                <div class="cib-icon"><i class="fas fa-clock"></i></div>
+                <div class="cib-text"><span>Disponibilidade</span><strong>Locação imediata disponível</strong></div>
+              </div>
+            </div>
+            <a href="https://wa.me/5511930710050?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+              target="_blank" class="btn-wpp"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="150">
+          <div class="contact-form-box">
+            <div class="cfb-header">Solicite um Orçamento</div>
+            <form id="contatoForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6"><label class="cf-label">Nome completo *</label><input type="text" class="cf-input"
+                    id="nome" placeholder="Seu nome" required /></div>
+                <div class="col-md-6"><label class="cf-label">Telefone / WhatsApp *</label><input type="tel"
+                    class="cf-input" id="telefone" placeholder="(11) 99999-9999" required /></div>
+                <div class="col-12"><label class="cf-label">E-mail</label><input type="email" class="cf-input"
+                    id="email" placeholder="seu@email.com" /></div>
+                <div class="col-12">
+                  <label class="cf-label">Tipo de Serviço</label>
+                  <select class="cf-input" id="servico">
+                    <option value="">Selecione o serviço</option>
+                    <option>Içamento de cargas</option>
+                    <option>Montagem de estruturas</option>
+                    <option>Movimentação de contêineres</option>
+                    <option>Trabalhos em altura / Cesto Aéreo</option>
+                    <option>Transporte especial</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+                <div class="col-12"><label class="cf-label">Mensagem *</label><textarea class="cf-input" id="mensagem"
+                    rows="4" placeholder="Descreva a necessidade da sua obra..." required></textarea></div>
+                <div class="col-12"><button type="submit" class="btn-solid w-100"><i class="fas fa-paper-plane"></i>
+                    Enviar via WhatsApp</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map mt-5" data-aos="fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.245!2d-46.5800!3d-23.5050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMwJzE4LjAiUyA0NsKwMzQnNDguMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+          width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+          title="Localização CSJ Rocha"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top-border"></div>
+    <div class="container">
+      <div class="row g-5 footer-grid">
+        <div class="col-lg-4">
+          <div class="ft-brand">
+            <img src="img/logo.jpeg" alt="CSJ Rocha" height="52"
+              onerror="this.style.display='none';document.getElementById('ft-logo-txt').style.display='block';" />
+            <div id="ft-logo-txt" class="nav-logo-txt" style="display:none;"><span
+                class="nl-main">CSJ<em>ROCHA</em></span><span class="nl-sub">Transportes</span></div>
+          </div>
+          <p class="ft-desc">Soluções em içamento e movimentação de cargas pesadas em São Paulo e Região. Segurança,
+            pontualidade e excelência operacional desde 2021.</p>
+          <div class="ft-social">
+            <a href="https://wa.me/5511930710050" target="_blank" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="mailto:custodiosilverio@hotmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="ft-title">Navegação</h5>
+          <ul class="ft-nav">
+            <li><a href="#inicio"><i class="fas fa-chevron-right"></i> Início</a></li>
+            <li><a href="#sobre"><i class="fas fa-chevron-right"></i> Sobre Nós</a></li>
+            <li><a href="#missao"><i class="fas fa-chevron-right"></i> Nossa Missão</a></li>
+            <li><a href="#servicos"><i class="fas fa-chevron-right"></i> Serviços</a></li>
+            <li><a href="#frota"><i class="fas fa-chevron-right"></i> Nossa Frota</a></li>
+            <li><a href="#galeria"><i class="fas fa-chevron-right"></i> Galeria</a></li>
+            <li><a href="#contato"><i class="fas fa-chevron-right"></i> Fale Conosco</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="ft-title">Contato</h5>
+          <ul class="ft-contact">
+            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/5511930710050">(11) 93071-0050</a></li>
+            <li><i class="fas fa-envelope"></i><a
+                href="mailto:custodiosilverio@hotmail.com">custodiosilverio@hotmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i>Parque Novo Mundo, São Paulo — SP</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Powerd By: GMP Desenvolvimento. Todos os direitos reservados.</span>
+        <span>São Paulo — SP</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/5511930710050?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank"
+    class="wpp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wpp-tip">Orçamento Rápido</span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
