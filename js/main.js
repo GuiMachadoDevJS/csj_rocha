@@ -1,5 +1,5 @@
 /* ============================================================
-   CSJ ROCHA v2 — main.js
+   CSJ ROCHA — main.js
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -234,6 +234,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.6 });
 
     kpiNumbers.forEach(el => observer.observe(el));
+  }
+
+  // --------------------------------------------------------
+  // BOTÃO VOLTAR AO TOPO
+  // --------------------------------------------------------
+  const btnTop = document.getElementById('btnTop');
+  if (btnTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        btnTop.classList.add('visible');
+      } else {
+        btnTop.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    btnTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 
   // --------------------------------------------------------

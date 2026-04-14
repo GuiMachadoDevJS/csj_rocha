@@ -3,7 +3,7 @@
 ## Estrutura de Arquivos
 
 ```
-csj-rocha-v2/
+csj-rocha /
 ├── index.html          ← Página principal
 ├── css/
 │   └── style.css       ← Identidade visual azul marinho + branco
@@ -18,7 +18,7 @@ csj-rocha-v2/
 └── README.md
 ```
 
-## Diferenciais desta versão
+## Caracteristicas
 
 - **Paleta azul marinho** fiel ao portfólio da CSJ Rocha (#0B1F3A + #1565C0)
 - **Preloader** animado com barra de progresso
@@ -39,4 +39,4 @@ csj-rocha-v2/
 ## Contato configurado
 
 - WhatsApp: (11) 93071-0050  
-- E-mail: custodiosilverio@hotmail.com
+- E-mail: csjrochatransportes@gmail.com

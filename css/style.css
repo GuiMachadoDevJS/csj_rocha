@@ -46,11 +46,15 @@
 
 /* ---------- RESET ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  background: var(--navy);
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--font-b);
-  background: var(--white);
+  background: var(--navy);
   color: var(--navy);
   overflow-x: hidden;
   line-height: 1.7;
@@ -1982,3 +1986,43 @@ textarea.cf-input { resize: vertical; min-height: 120px; }
    ============================================================ */
 .tc-photo-sm { height: 190px; }
 
+/* ============================================================
+   BOTÃO VOLTAR AO TOPO
+   ============================================================ */
+.btn-top {
+  position: fixed;
+  bottom: 96px;
+  right: 28px;
+  width: 56px;
+  height: 56px;
+  background: var(--navy);
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--white);
+  z-index: 9998;
+  cursor: pointer;
+  box-shadow: 0 6px 24px rgba(11,31,58,0.4);
+  transition: var(--transition);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+}
+.btn-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.btn-top:hover {
+  background: var(--blue);
+  border-color: var(--blue-bright);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(21,101,192,0.4);
+}
+
+@media (max-width: 480px) {
+  .btn-top { bottom: 82px; right: 14px; width: 44px; height: 44px; font-size: 0.95rem; }
+}
