@@ -2026,3 +2026,393 @@ textarea.cf-input { resize: vertical; min-height: 120px; }
 @media (max-width: 480px) {
   .btn-top { bottom: 82px; right: 14px; width: 44px; height: 44px; font-size: 0.95rem; }
 }
+
+/* ============================================================
+   SERVIÇOS — botão WhatsApp por serviço
+   ============================================================ */
+.srv-wpp {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  background: #25D366;
+  color: var(--white) !important;
+  font-family: var(--font-h);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.srv-wpp:hover {
+  background: #128C7E;
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   CLIENTES / PARCEIROS
+   ============================================================ */
+.sec-parceiros { background: var(--white); }
+
+.parceiros-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.parceiro-card {
+  background: var(--off-white);
+  border: 1px solid var(--light-grey);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  text-align: center;
+  width: 240px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.parceiro-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--blue);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+.parceiro-card:hover::before { transform: scaleX(1); }
+.parceiro-card:hover {
+  border-color: rgba(21,101,192,0.3);
+  box-shadow: 0 16px 48px rgba(11,31,58,0.08);
+  transform: translateY(-4px);
+}
+.parceiro-card.parceiro-placeholder {
+  border-style: dashed;
+  opacity: 0.6;
+}
+.parceiro-card.parceiro-placeholder:hover { opacity: 1; }
+
+.parceiro-icon {
+  width: 60px; height: 60px;
+  background: rgba(21,101,192,0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--blue);
+  margin: 0 auto 16px;
+  border: 1px solid rgba(21,101,192,0.15);
+  transition: var(--transition);
+}
+.parceiro-card:hover .parceiro-icon {
+  background: var(--blue);
+  color: var(--white);
+}
+.parceiro-nome {
+  font-family: var(--font-d);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.parceiro-desc {
+  font-size: 0.82rem;
+  color: var(--dark-grey);
+  line-height: 1.5;
+}
+
+/* ============================================================
+   ÁREA DE ATENDIMENTO
+   ============================================================ */
+.sec-atendimento { background: var(--off-white); }
+
+.atend-map-wrap {
+  position: relative;
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  overflow: hidden;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.atend-map-label {
+  font-family: var(--font-h);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--blue-bright);
+  position: relative;
+  z-index: 2;
+}
+.atend-map-visual {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.atend-map-icon {
+  font-size: 5rem;
+  color: var(--blue);
+  opacity: 0.15;
+  position: absolute;
+}
+.atend-pulse {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgba(33,150,243,0.3);
+  border-radius: 50%;
+  animation: pulseRing 3s ease infinite;
+}
+.atend-pulse-2 {
+  width: 170px;
+  height: 170px;
+  animation-delay: 1s;
+  border-color: rgba(33,150,243,0.15);
+}
+@keyframes pulseRing {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.1); opacity: 0; }
+}
+.atend-map-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 3;
+}
+.atend-city-dot {
+  width: 14px; height: 14px;
+  background: var(--blue-bright);
+  border-radius: 50%;
+  box-shadow: 0 0 16px var(--blue-bright);
+  animation: pulseDot 2s infinite;
+}
+.atend-city-name {
+  font-family: var(--font-h);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--white);
+  text-transform: uppercase;
+  background: rgba(33,150,243,0.15);
+  border: 1px solid var(--border-blue);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.atend-radius-badge {
+  font-family: var(--font-h);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--mid-grey);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+.atend-cidades {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.atend-grupo-title {
+  font-family: var(--font-h);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.atend-grupo-title i { color: var(--blue); font-size: 0.65rem; }
+
+.atend-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.atend-badge {
+  font-family: var(--font-h);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: var(--white);
+  border: 1px solid var(--light-grey);
+  color: var(--navy);
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: var(--transition);
+  box-shadow: 0 2px 6px rgba(11,31,58,0.05);
+}
+.atend-badge:hover {
+  background: var(--blue);
+  color: var(--white);
+  border-color: var(--blue);
+  transform: translateY(-2px);
+}
+.atend-badge.destaque {
+  background: var(--blue);
+  color: var(--white);
+  border-color: var(--blue);
+  font-size: 0.85rem;
+  padding: 8px 18px;
+}
+
+.atend-consulta {
+  background: rgba(21,101,192,0.06);
+  border: 1px solid rgba(21,101,192,0.2);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: 0.88rem;
+  color: var(--dark-grey);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.atend-consulta i { color: var(--blue); flex-shrink: 0; }
+.atend-consulta a {
+  color: var(--blue);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.atend-consulta a:hover { color: var(--navy); }
+
+@media (max-width: 767px) {
+  .atend-map-wrap { min-height: 260px; padding: 28px; }
+  .parceiro-card { width: 100%; max-width: 300px; }
+}
+
+/* ============================================================
+   CONTADOR ANIMADO
+   ============================================================ */
+.sec-counter {
+  background: var(--navy);
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+.sec-counter::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(33,150,243,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(33,150,243,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+.sec-counter::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--blue), var(--blue-bright), var(--blue), transparent);
+}
+
+.counter-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px 40px;
+}
+
+.counter-icon {
+  width: 48px; height: 48px;
+  background: rgba(33,150,243,0.1);
+  border: 1px solid rgba(33,150,243,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--blue-bright);
+  margin-bottom: 12px;
+  transition: var(--transition);
+}
+.counter-item:hover .counter-icon {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.counter-n {
+  font-family: var(--font-d);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+  display: block;
+  margin-bottom: 6px;
+}
+.counter-n small {
+  font-size: 1.4rem;
+  color: var(--blue-bright);
+}
+
+.counter-label {
+  font-family: var(--font-h);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--mid-grey);
+}
+
+.counter-sep {
+  width: 1px;
+  height: 70px;
+  background: rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+
+/* Responsivo */
+@media (max-width: 991px) {
+  .counter-item { padding: 16px 24px; }
+  .counter-sep { height: 50px; }
+}
+@media (max-width: 767px) {
+  .counter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .counter-sep { display: none; }
+  .counter-item {
+    padding: 24px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .counter-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.05); }
+  .counter-n { font-size: 2.2rem; }
+}
+@media (max-width: 480px) {
+  .counter-n { font-size: 1.9rem; }
+  .counter-label { font-size: 0.65rem; letter-spacing: 1px; }
+}
