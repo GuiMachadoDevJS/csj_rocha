@@ -1097,6 +1097,13 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
   object-fit: cover;
   transition: transform 0.5s ease;
 }
+.img-frota-ajuste-1 {
+  object-position: center 75%;
+}
+
+.img-frota-ajuste-2 {
+  object-position: center 25%;
+}
 .truck-card:hover .tc-photo img { transform: scale(1.05); }
 .tc-photo-overlay {
   position: absolute;
