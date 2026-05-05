@@ -1533,12 +1533,43 @@ textarea.cf-input { resize: vertical; min-height: 120px; }
   margin-bottom: -3px;
 }
 
-.ft-brand { margin-bottom: 16px; }
+.ft-brand {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+}
 .ft-desc {
   font-size: 0.88rem;
   color: rgba(255,255,255,0.5);
   line-height: 1.75;
   margin-bottom: 20px;
+}
+.ft-logo-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  line-height: 0;
+  transition: var(--transition);
+}
+.ft-logo-card:hover {
+  transform: translateY(-2px);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.ft-logo-img {
+  width: 185px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: transparent;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.16));
 }
 .ft-social {
   display: flex;
@@ -1745,6 +1776,18 @@ textarea.cf-input { resize: vertical; min-height: 120px; }
   /* Footer */
   .footer-bottom { flex-direction: column; align-items: center; text-align: center; gap: 4px; }
   .ft-desc { font-size: 0.82rem; }
+
+    .ft-brand {
+    justify-content: center;
+  }
+
+  .ft-logo-card {
+    margin: 0 auto;
+  }
+
+  .ft-logo-img {
+    width: 155px;
+  }
 
   /* Lightbox */
   .lb-prev { left: -36px; width: 32px; height: 32px; font-size: 0.85rem; }
